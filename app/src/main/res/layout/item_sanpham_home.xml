@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/backgroud_item_sach"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/ivsach"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:gravity="left"
+
+        android:src="@drawable/dacnhantam" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:id="@+id/txtgiasach"
+        android:text="Giá :50000đ"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đắc nhân tâm"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txttensaxh"/>
+
+</LinearLayout>

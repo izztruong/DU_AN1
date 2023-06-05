@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKiActivity"
+    android:orientation="vertical"
+    android:background="@drawable/banner_2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv_title_signup"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <EditText
+                android:id="@+id/edt_signup_username"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:hint="Nhập username"
+                android:background="@null"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/email"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <EditText
+                android:id="@+id/edt_signup_email"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:hint="Nhập email"
+                android:background="@null"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <!--            <EditText-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:textSize="22sp"-->
+            <!--                android:hint="Nhập password"-->
+            <!--                android:background="@null"-->
+            <!--                android:layout_width="260dp"-->
+            <!--                android:layout_height="wrap_content"/>-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:src="@drawable/show_pass"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="16sp"
+                    android:backgroundTint="#CDF0EA"
+                    android:id="@+id/etPassword_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <!--            <EditText-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:textSize="22sp"-->
+            <!--                android:hint="Nhập lại password"-->
+            <!--                android:background="@null"-->
+            <!--                android:layout_width="260dp"-->
+            <!--                android:layout_height="wrap_content"/>-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:src="@drawable/show_pass"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="16sp"
+                    android:backgroundTint="#CDF0EA"
+                    android:id="@+id/etPassword_re_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập lại password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="#CDF0EA">
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#59C1BD"
+            android:text="Đăng Ký"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_signup_cancel"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#59C1BD"
+            android:text="Hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:text="ALREADY HAVE AN ACCOUNT ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_signup_login"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#25316D"
+            android:layout_marginLeft="10dp"
+            android:text="LOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
