@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/backgr_danhsach"
+    tools:context=".Fragment.Home_Fragment">
+    <androidx.viewpager.widget.ViewPager
+        android:padding="10dp"
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_marginTop="10dp"
+        android:id="@+id/circle_indiacator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Sản Phẩm nổi bật"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvtrangchu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DangNhapActivity"
+    android:orientation="vertical"
+    android:background="@drawable/banner_2">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbardangnhap"
+        android:background="#00FF9800"
+        app:titleTextColor="#C1B5B5"
+        android:layout_alignParentTop="true"
+        app:title=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="LOGIN"
+        android:layout_marginTop="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:id="@+id/id_edt_login"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:hint="Nhập username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CDF0EA">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CDF0EA"
+                    android:hint="Nhập password"
+                    android:inputType="textPassword"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/edt_login_pass"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="22sp"-->
+            <!--                android:hint="Nhập password"-->
+            <!--                android:background="@null"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_width="240dp"-->
+            <!--                android:layout_height="wrap_content"/>-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/img_showpass"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:src="@drawable/not_show"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"/>-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/checkghinho"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Nhớ Tài Khoản"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:backgroundTint="#CDF0EA"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Đăng Nhập"
+        android:id="@+id/btndangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:text="YOU DON'T HAVE AN ACCOUNT ?"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_login_signup"
+            android:textStyle="bold"
+            android:textColor="#25316D"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:text="SIGN UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

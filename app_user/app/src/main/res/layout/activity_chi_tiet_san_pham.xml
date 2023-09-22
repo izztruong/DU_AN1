@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".ChiTietSachActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarctsp"
+        android:background="#00FF9800"
+        app:titleTextColor="#C1B5B5"
+        android:layout_alignParentTop="true"
+        app:title=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivctsp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/cuoc_song" />
+
+
+        <TextView
+            android:id="@+id/txttensachctsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:layout_margin="10dp"
+            android:text="Cuộc sống giống cuộc đời" />
+
+        <TextView
+            android:id="@+id/txtgiactsp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Giá: 50000đ" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Mô tả"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtmotactsp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Trân trọng chính mình đề cập đến những nghịch lý bất biến trong các quan hệ xã hội, mà quan trọng nhất là nghịch lý giữa trao đi và nhận lại, đã được nhiều nhà hiền
+triết từ phương Đông tới phương Tây truyền giảng suốt bao đời nay. Qua phân tích và trích dẫn nhiều lời dạy thánh hiền, tác giả đã lật đổ những lầm tưởng về “Cái Tôi”, khẳng định tầm quan trọng của việc thấu hiểu và yêu thương bản thân,
+giúp mỗi chúng ta biết trân trọng chính mình để từ đó, biết trân trọng mọi người"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btnthemgiohang"
+            android:background="@drawable/button_themgiohang"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/btnmuangay"
+            android:background="@drawable/button_themgiohang"
+            android:text="Mua ngay"/>
+    </LinearLayout>
+
+</RelativeLayout>
